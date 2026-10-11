@@ -2,11 +2,14 @@
   "name": "the-host-sample-api",
   "version": "1.0.0",
   "private": true,
-  "description": "Minimal Node.js HTTP API for The Host full-stack sample",
+  "description": "Minimal Node.js HTTP API for The Host full-stack sample (database/storage check route)",
   "scripts": {
     "start": "node server.js"
   },
   "engines": {
     "node": ">=20"
+  },
+  "dependencies": {
+    "pg": "8.23.1"
   }
 }
