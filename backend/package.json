@@ -1,0 +1,12 @@
+{
+  "name": "the-host-sample-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minimal Node.js HTTP API for The Host full-stack sample",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

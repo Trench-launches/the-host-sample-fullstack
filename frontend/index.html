@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Host sample</title>
+<style>body{font:16px system-ui,sans-serif;background:#101210;color:#edf0e6;max-width:640px;margin:40px auto;padding:0 16px}code{color:#c6fa78}</style></head>
+<body>
+<h1>The Host full-stack sample</h1>
+<p>Frontend served at <code>/</code>; backend API at <code>/api</code> on the same origin.</p>
+<p id="out">Calling <code>/api/hello</code>…</p>
+<script>
+fetch('/api/hello').then(r => r.json()).then(j => {
+  document.getElementById('out').textContent = 'API says: ' + j.message + ' (secret configured: ' + j.secretConfigured + ')';
+}).catch(e => { document.getElementById('out').textContent = 'API error: ' + e.message; });
+</script>
+</body>
+</html>
