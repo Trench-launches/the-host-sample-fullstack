@@ -7,3 +7,5 @@ A minimal full-stack app used to verify The Host deployments.
   `/api/hello` reports whether `SAMPLE_SECRET` is configured, never its value.
 
 Contains no secrets.
+
+<!-- webhook check 2026-10-11: README-only change used to verify The Host receives signed GitHub push events -->
